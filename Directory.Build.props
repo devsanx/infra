@@ -1,4 +1,5 @@
 <Project>
+    <Import Project="$(MSBuildThisFileDirectory)\eng\AdditionalFiles.props" />
     <PropertyGroup>
         <RootDirectory>$(MSBuildThisFileDirectory)</RootDirectory>
         <SourceDirectory>$(RootDirectory)src</SourceDirectory>
