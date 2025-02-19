@@ -1,9 +1,9 @@
 ﻿using Discord;
 using Discord.Interactions;
 using Discord.WebSocket;
-using Republic.Portals.DB;
+using Riverside.Alliance.Components.Portals.DB;
 
-namespace Republic.Portals.InteractionHandlers;
+namespace Riverside.Alliance.Components.Portals.InteractionHandlers;
 
 [RequireUserPermission(GuildPermission.Administrator)]
 public class LogChannelHandler(BotDbContext dbContext) : InteractionModuleBase<SocketInteractionContext>
@@ -13,9 +13,7 @@ public class LogChannelHandler(BotDbContext dbContext) : InteractionModuleBase<S
 	public async Task HandleLogChannel(SocketGuildChannel channel)
 	{
 		if (channel.GetChannelType() != ChannelType.Text)
-		{
 			await RespondAsync("This type of channel can't be used for logging...!", ephemeral: true);
-		}
 
 		// Adding db entry with Key as 'LogChannelId' and value as the Channel ID
 		dbContext.KvStores.Add(new KVStore()

@@ -4,9 +4,9 @@ using Discord.Interactions;
 using Discord.WebSocket;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Republic.Private;
+using Riverside.Alliance.Private;
 
-namespace Republic.Portals;
+namespace Riverside.Alliance.Components.Portals;
 
 public class BotService(DiscordSocketClient discordSocketClient,
 	InteractionService interactionService,
@@ -30,7 +30,7 @@ public class BotService(DiscordSocketClient discordSocketClient,
 			_ = Task.Run(async () =>
 			{
 				// Setting up slash commands and context commands
-				ulong guildId = Private.Portals.Bot.GuildId;
+				ulong guildId = Constants.GuildId;
 				var guild = discordSocketClient.GetGuild(guildId);
 				await guild.BulkOverwriteApplicationCommandAsync(new ApplicationCommandProperties[]
 				{
@@ -42,7 +42,7 @@ public class BotService(DiscordSocketClient discordSocketClient,
 		};
 
 		// Starting discord socket client
-		await discordSocketClient.LoginAsync(TokenType.Bot, Private.Portals.Token);
+		await discordSocketClient.LoginAsync(TokenType.Bot, Constants.BotToken);
 		await discordSocketClient.StartAsync();
 
 		// Setting bot's activity

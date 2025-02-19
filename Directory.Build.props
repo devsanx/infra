@@ -3,6 +3,7 @@
     <PropertyGroup>
         <RootDirectory>$(MSBuildThisFileDirectory)</RootDirectory>
         <SourceDirectory>$(RootDirectory)src</SourceDirectory>
+		<BuildDirectory>$(RootDirectory)eng</BuildDirectory>
         <TestsDirectory>$(RootDirectory)tests</TestsDirectory>
         <ApiDirectory>$(SourceDirectory)\api</ApiDirectory>
         <ComponentsDirectory>$(SourceDirectory)\components</ComponentsDirectory>
@@ -17,4 +18,9 @@
         <ServiceDefaultsProject>$(ApiDirectory)\Riverside.Alliance.ServiceDefaults\Riverside.Alliance.ServiceDefaults.csproj</ServiceDefaultsProject>
         <ApiProject>$(ApiDirectory)\Riverside.Alliance.ApiService\Riverside.Alliance.ApiService.csproj</ApiProject>
     </PropertyGroup>
+
+	<ItemGroup>
+		<Compile Condition="'$(MSBuildProjectName)' != 'Riverside.Alliance.AppHost'" Include="$(BuildDirectory)\GlobalUsings.cs" />
+		<ProjectReference Condition="'$(MSBuildProjectName)' != 'Riverside.Alliance'" Include="$(SharedProject)" />
+	</ItemGroup>
 </Project>

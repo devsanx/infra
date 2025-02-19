@@ -1,6 +1,6 @@
 ﻿using Discord;
 
-namespace Republic.Portals.DB;
+namespace Riverside.Alliance.Components.Portals.DB;
 public class ExcludedChannel
 {
 	public ulong Id { get; set; }

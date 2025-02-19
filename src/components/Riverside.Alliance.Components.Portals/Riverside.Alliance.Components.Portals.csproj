@@ -28,5 +28,4 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-  <Import Project="$(CredentialsProject)" Label="Shared" />
 </Project>

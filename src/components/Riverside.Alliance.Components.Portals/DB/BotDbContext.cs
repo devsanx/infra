@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Republic.Portals.DB;
+namespace Riverside.Alliance.Components.Portals.DB;
 
 public sealed class BotDbContext : DbContext
 {

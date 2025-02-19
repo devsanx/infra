@@ -1,4 +1,4 @@
-﻿namespace Republic.Portals.DB;
+﻿namespace Riverside.Alliance.Components.Portals.DB;
 
 public class KVStore
 {

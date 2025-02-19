@@ -3,7 +3,7 @@ using Discord.WebSocket;
 using Serilog;
 using System.Reflection;
 
-namespace Republic.Portals;
+namespace Riverside.Alliance.Components.Portals;
 
 public class InteractionHandler(
 	DiscordSocketClient discordSocketClient,

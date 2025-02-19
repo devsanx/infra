@@ -1,6 +1,6 @@
 ﻿using Discord;
 
-namespace Republic.Common;
+namespace Riverside.Alliance.Common;
 
 public interface IEmbedProvider
 {

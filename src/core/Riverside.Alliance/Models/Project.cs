@@ -1,10 +1,9 @@
-﻿namespace Republic.Models
+﻿namespace Riverside.Alliance.Models;
+
+public class Project
 {
-	public class Project
-	{
-		public int Id { get; set; }
-		public string Name { get; set; }
-		public string Description { get; set; }
-		public string Owner { get; set; }
-	}
+	public int Id { get; set; }
+	public string Name { get; set; }
+	public string Description { get; set; }
+	public string Owner { get; set; }
 }

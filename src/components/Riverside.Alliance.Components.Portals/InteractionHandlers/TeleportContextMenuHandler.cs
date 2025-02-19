@@ -1,11 +1,11 @@
 ﻿using Discord;
 using Discord.Interactions;
 using Discord.WebSocket;
-using Republic.Portals.DB;
-using Republic.Portals.Embeds;
-using Republic.Portals.Helpers;
+using Riverside.Alliance.Components.Portals.Embeds;
+using Riverside.Alliance.Components.Portals.DB;
+using Riverside.Alliance.Components.Portals.Helpers;
 
-namespace Republic.Portals.InteractionHandlers;
+namespace Riverside.Alliance.Components.Portals.InteractionHandlers;
 
 public class TeleportContextMenuHandler(
 	BotDbContext dbContext, Helper helper) : InteractionModuleBase<SocketInteractionContext>

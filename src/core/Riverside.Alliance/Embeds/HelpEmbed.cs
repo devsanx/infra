@@ -1,8 +1,8 @@
 ﻿using Discord;
-using Republic.Common;
+using Riverside.Alliance.Common;
 
 // ReSharper disable All
-namespace Republic.Embeds;
+namespace Riverside.Alliance.Embeds;
 
 public class HelpEmbed(string botName, string botVersion, string botHelpReference, ulong botCreatorId) : IEmbedProvider
 {

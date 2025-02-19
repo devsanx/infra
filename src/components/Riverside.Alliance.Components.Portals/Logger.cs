@@ -2,7 +2,7 @@
 using Serilog;
 using Serilog.Events;
 
-namespace Republic.Portals;
+namespace Riverside.Alliance.Components.Portals;
 
 public class CustomBotLogger
 {

@@ -6,11 +6,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Republic.Portals.DB;
-using Republic.Portals.Helpers;
+using Riverside.Alliance.Components.Portals.DB;
+using Riverside.Alliance.Components.Portals.Helpers;
 using Serilog;
 
-namespace Republic.Portals;
+namespace Riverside.Alliance.Components.Portals;
 
 public class Program
 {

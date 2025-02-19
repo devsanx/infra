@@ -33,4 +33,5 @@
       <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
+  <Import Project="$(CredentialsProject)" Label="Shared" />
 </Project>

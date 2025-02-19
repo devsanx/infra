@@ -1,11 +1,11 @@
 ﻿using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
-using Republic.Portals.DB;
-using Republic.Portals.Embeds;
-using Republic.Portals.Helpers;
+using Riverside.Alliance.Components.Portals.Embeds;
+using Riverside.Alliance.Components.Portals.DB;
+using Riverside.Alliance.Components.Portals.Helpers;
 
-namespace Republic.Portals.CommandHandlers;
+namespace Riverside.Alliance.Components.Portals.CommandHandlers;
 
 public class PortalCommandHandler(BotDbContext dbContext,
 	Helper helper) : ModuleBase<SocketCommandContext>

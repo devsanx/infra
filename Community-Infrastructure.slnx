@@ -1,4 +1,8 @@
 <Solution>
+  <Folder Name="/eng/" Id="fdb26108-3b51-442a-b227-76076e333c8a">
+    <File Path="eng/AdditionalFiles.props" />
+    <File Path="eng/GlobalUsings.cs" />
+  </Folder>
   <Folder Name="/src/" />
   <Folder Name="/src/api/" Id="81034408-37c8-1011-444e-4c15c2fada8e">
     <Project Path="src/api/Riverside.Alliance.ApiService/Riverside.Alliance.ApiService.csproj" />

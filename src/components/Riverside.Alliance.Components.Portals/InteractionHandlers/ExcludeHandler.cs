@@ -1,9 +1,9 @@
 ﻿using Discord;
 using Discord.Interactions;
 using Microsoft.EntityFrameworkCore;
-using Republic.Portals.DB;
+using Riverside.Alliance.Components.Portals.DB;
 
-namespace Republic.Portals.InteractionHandlers;
+namespace Riverside.Alliance.Components.Portals.InteractionHandlers;
 
 [RequireUserPermission(GuildPermission.Administrator)]
 public class ExcludeHandler(BotDbContext dbContext) : InteractionModuleBase<SocketInteractionContext>

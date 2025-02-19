@@ -1,8 +1,7 @@
-﻿namespace Republic.Models
+﻿namespace Riverside.Alliance.Models;
+
+public class User
 {
-	public class User
-	{
-		public ulong DiscordId { get; set; }
-		public string Username { get; set; }
-	}
+	public ulong DiscordId { get; set; }
+	public string Username { get; set; }
 }

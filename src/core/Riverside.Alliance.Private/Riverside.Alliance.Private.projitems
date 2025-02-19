@@ -9,5 +9,6 @@
     <Import_RootNamespace>Riverside.Alliance.Private</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Constants.cs" />
   </ItemGroup>
 </Project>

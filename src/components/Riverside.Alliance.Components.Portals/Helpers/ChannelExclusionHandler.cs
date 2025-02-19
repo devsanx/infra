@@ -1,9 +1,9 @@
 ﻿using Discord;
 using Discord.WebSocket;
 using Microsoft.EntityFrameworkCore;
-using Republic.Portals.DB;
+using Riverside.Alliance.Components.Portals.DB;
 
-namespace Republic.Portals.Helpers;
+namespace Riverside.Alliance.Components.Portals.Helpers;
 
 public class Helper(BotDbContext dbContext)
 {
@@ -16,9 +16,7 @@ public class Helper(BotDbContext dbContext)
 			{
 				var channelObj = guild.GetChannel(excludedChannel.ChannelId) as SocketCategoryChannel;
 				if (channelObj!.Channels.Any(categoryChannel => categoryChannel.Id == channel.Id))
-				{
 					return true;
-				}
 			}
 			else
 			{

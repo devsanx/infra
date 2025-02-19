@@ -1,7 +1,7 @@
 ﻿using Discord;
-using Republic.Common;
+using Riverside.Alliance.Common;
 
-namespace Republic.Embeds;
+namespace Riverside.Alliance.Embeds;
 
 public class PingEmbed(int ping) : IEmbedProvider
 {

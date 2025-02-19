@@ -1,8 +1,8 @@
 ﻿using Discord;
 using Discord.WebSocket;
-using Republic.Common;
+using Riverside.Alliance.Common;
 
-namespace Republic.Portals.Embeds;
+namespace Riverside.Alliance.Components.Portals.Embeds;
 
 public class TxPortalEmbed(SocketGuildChannel channel, SocketGuild guild) : IEmbedProvider
 {
