@@ -1,5 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -21,11 +20,9 @@
     <IncludeSymbols>True</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="Discord.Net" Version="3.16.0" />
+    <PackageReference Include="Discord.Net" />
   </ItemGroup>
-
   <ItemGroup>
     <None Update="Assets\PackageLogo.png">
       <Pack>True</Pack>
@@ -36,5 +33,4 @@
       <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
-
 </Project>

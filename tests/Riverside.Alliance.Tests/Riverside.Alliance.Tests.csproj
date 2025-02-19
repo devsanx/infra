@@ -1,5 +1,4 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -7,21 +6,18 @@
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
   </PropertyGroup>
-
   <PropertyGroup>
     <EnableMSTestRunner>true</EnableMSTestRunner>
     <OutputType>Exe</OutputType>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="Aspire.Hosting.Testing" Version="9.0.0" />
-    <PackageReference Include="MSTest" Version="3.4.3" />
+    <PackageReference Include="Aspire.Hosting.Testing" />
+    <PackageReference Include="MSTest" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" VersionOverride="9.0.0" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="$(AppHostProject)" />
   </ItemGroup>
-
   <ItemGroup>
     <Using Include="System.Net" />
     <Using Include="Microsoft.Extensions.DependencyInjection" />
@@ -29,5 +25,4 @@
     <Using Include="Aspire.Hosting.Testing" />
     <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
   </ItemGroup>
-
 </Project>
