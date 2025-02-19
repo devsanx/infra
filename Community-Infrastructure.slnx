@@ -1,0 +1,23 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/api/" Id="81034408-37c8-1011-444e-4c15c2fada8e">
+    <Project Path="src/api/Riverside.Alliance.ApiService/Riverside.Alliance.ApiService.csproj" />
+    <Project Path="src/api/Riverside.Alliance.ServiceDefaults/Riverside.Alliance.ServiceDefaults.csproj" />
+  </Folder>
+  <Folder Name="/src/components/" Id="44c0fc67-c45c-fac9-ed1f-ef95c88c3779">
+    <Project Path="src/components/Riverside.Alliance.Components.Portals/Riverside.Alliance.Components.Portals.csproj" />
+  </Folder>
+  <Folder Name="/src/core/" Id="8d626ea8-cb54-bc41-363a-217881beba6e">
+    <Project Path="src/core/Riverside.Alliance.Private/Riverside.Alliance.Private.shproj" />
+    <Project Path="src/core/Riverside.Alliance/Riverside.Alliance.csproj" />
+  </Folder>
+  <Folder Name="/src/platforms/" Id="82099983-647e-f067-e69a-cd800643a918">
+    <Project Path="src/platforms/Riverside.Alliance.AppHost/Riverside.Alliance.AppHost.csproj" />
+  </Folder>
+  <Folder Name="/src/web/" Id="03997797-e7f5-0643-168d-b8ea7178c2fe">
+    <Project Path="src/web/Riverside.Alliance.Web/Riverside.Alliance.Web.csproj" />
+  </Folder>
+  <Folder Name="/tests/" Id="02ea681e-c7d8-13c7-8484-4ac65e1b71e8">
+    <Project Path="tests/Riverside.Alliance.Tests/Riverside.Alliance.Tests.csproj" />
+  </Folder>
+</Solution>

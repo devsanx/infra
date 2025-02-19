@@ -1,0 +1,19 @@
+<Project>
+    <PropertyGroup>
+        <RootDirectory>$(MSBuildThisFileDirectory)</RootDirectory>
+        <SourceDirectory>$(RootDirectory)src</SourceDirectory>
+        <TestsDirectory>$(RootDirectory)tests</TestsDirectory>
+        <ApiDirectory>$(SourceDirectory)\api</ApiDirectory>
+        <ComponentsDirectory>$(SourceDirectory)\components</ComponentsDirectory>
+        <SharedDirectory>$(SourceDirectory)\core</SharedDirectory>
+        <AppDirectory>$(SourceDirectory)\platforms</AppDirectory>
+        <WebDirectory>$(SourceDirectory)\web</WebDirectory>
+        
+        <SharedProject>$(SharedDirectory)\Riverside.Alliance\Riverside.Alliance.csproj</SharedProject>
+        <CredentialsProject>$(SharedDirectory)\Riverside.Alliance.Private\Riverside.Alliance.Private.projitems</CredentialsProject>
+        <AppHostProject>$(AppDirectory)\Riverside.Alliance.AppHost\Riverside.Alliance.AppHost.csproj</AppHostProject>
+        <WebProject>$(WebDirectory)\Riverside.Alliance.Web\Riverside.Alliance.Web.csproj</WebProject>
+        <ServiceDefaultsProject>$(ApiDirectory)\Riverside.Alliance.ServiceDefaults\Riverside.Alliance.ServiceDefaults.csproj</ServiceDefaultsProject>
+        <ApiProject>$(ApiDirectory)\Riverside.Alliance.ApiService\Riverside.Alliance.ApiService.csproj</ApiProject>
+    </PropertyGroup>
+</Project>
