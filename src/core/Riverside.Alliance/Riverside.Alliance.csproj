@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Developer Sanctuary</Title>
+    <Company>The People of Developer Sanctuary</Company>
+    <Description>The API and bots for Developer Sanctuary, all in one repo!</Description>
+    <PackageProjectUrl>https://dsc.gg/devsanx</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Lamparter/DevSanx</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>devsanx</PackageTags>
+    <Copyright>Copyright (c) 2024 Lamparter</Copyright>
+    <Version>0.0.1</Version>
+    <PackageIcon>Assets\PackageLogo.png</PackageIcon>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Discord.Net" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Assets\PackageLogo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  <Import Project="$(CredentialsProject)" Label="Shared" />
+</Project>
